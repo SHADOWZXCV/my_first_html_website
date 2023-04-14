@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Contact me</title>
+    </head>
+    <body>
+        <!-- form -->
+        <h1>Contact me form!</h1>
+        <p>Please fill in the form below: </p>
+        <form>
+            <label for="fname" >Enter your name: </label>
+            <!--
+                input types
+                1. text
+                2. email
+                3. password
+                4. text area
+            -->
+            <input type="text" name="fname" placeholder="Full name" required/>
+            <br />
+            <br />
+            <label for="mail">Email address: </label>
+            <input type="email" name="mail" placeholder="Your email address.." required/>
+
+            <br />
+            <br />
+            <label for="message">Your message: </label>
+            <textarea name="message" placeholder="Enter your message" required></textarea>
+
+            <br />
+            <br />
+            <label for="code">Secret code: </label>
+            <input type="password" name="code" placeholder="type your secret code..."  />
+
+            <br />
+            <br />
+
+            <!--
+                1. options
+                2. radio
+                3. checkbox
+                4. color
+            -->
+
+            <label for="birthday">Birthday is at: </label>
+            <select name="birthday">
+                <option>Home</option>
+                <option selected>Coffee shop</option>
+                <option>My father's house</option>
+            </select>
+
+            <p>Choose your gender: </p>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" />
+            <br />
+            <br />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" />
+            <br />
+            <br />
+
+
+            <p>The pets you own: </p>
+
+            <label for="pet">Dog</label>
+            <input type="checkbox" name="pet" value="dog" />
+            <br />
+            <br />
+            <label for="pet">Cat</label>
+            <input type="checkbox" name="pet" value="cat" />
+
+            <br />
+            <br />
+
+            <input type="color" name="color" value="#FF0000" />
+
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
